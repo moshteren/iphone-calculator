@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 500px;
+    margin: 4% auto;
+    letter-spacing: 5px;
+    font-family: 'Rajdhani';
+}
+
+.calculator {
+    padding: 5%;
+    background-color: #f2f2f2;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 5px;
+}
+
+.input-screen {
+    grid-row: span 1;
+    height: 55px;
+    background-color: white;
+    font-size: 48px;
+    text-align: end;
+    padding: 10px;
+    font-weight: 300;
+}
+
+.panel {
+    grid-row: span 5;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.button {
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#zero {
+    grid-column: 1 / span 2;
+}
